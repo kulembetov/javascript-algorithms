@@ -13,7 +13,7 @@ function countZeros(n) {
   }
   for (let i = 10; i <= n; i += 10) {
     result++;
-    if (i % 100 === 0) {
+    if (i % 100 == 0) {
       for (let j = i; j < i + 10 && j <= n; j++) {
         result++;
       }
