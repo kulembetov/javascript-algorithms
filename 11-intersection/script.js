@@ -8,7 +8,7 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    return [...new Set(arr1.filter((x) => arr2.includes(x)))];
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

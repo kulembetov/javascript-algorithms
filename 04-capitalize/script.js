@@ -4,10 +4,12 @@
  * Напишите функцию capitalize(str). Функция должна возвращать новую
  * строку каждое слово в которой начинается с прописной буквы.
  *
-*/
+ */
 
 function capitalize(str) {
-    // Напишите код здесь
+  return str.replace(/(^|\s)\S/g, function (capitalize) {
+    return capitalize.toUpperCase();
+  });
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
